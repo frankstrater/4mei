@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>4 mei</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="http://fonts.googleapis.com/css?family=IM+Fell+English:400italic" rel="stylesheet" type="text/css">
+
+	<style type="text/css">
+
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #000;
+		background-image: url('blackorchid.png');
+		color: #888;
+		font-family: 'IM Fell English', serif;
+		font-size: 20px;
+		font-style: italic;
+		line-height: 1.6em;
+	}
+
+	a {
+		color: #888;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #888;
+		text-decoration: underline;
+	}
+
+	.container {
+		width: 502px;
+		margin: 15px auto;
+	}
+
+	.fadetext {
+		opacity: 0;
+
+		-moz-animation: fadeIn 15s;
+		-webkit-animation: fadeIn 15s;
+		animation: fadeIn 15s;
+
+		-webkit-animation-delay: 15s;
+		-moz-animation-delay: 15s;
+		animation-delay: 15s;
+
+		-webkit-animation-fill-mode:forwards;
+ 		-moz-animation-fill-mode:forwards;
+ 		animation-fill-mode:forwards;
+	}
+
+	.textsub {
+		text-align: right;
+	}
+
+	.zoom {
+		margin: 15px 0;
+		width: 500px;
+		height: 500px;
+		border: 1px solid #222;
+		border-radius: 2px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.zoom img {
+		width: 500px;
+		height: 500px;
+
+		-moz-animation-name: zoomOut;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-timing-function: ease-out;
+		-moz-animation-duration: 30s;
+
+		-webkit-animation-name: zoomOut;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-timing-function: ease-out;
+		-webkit-animation-duration: 30s;
+
+		animation-name: zoomOut;
+		animation-iteration-count: 1;
+		animation-timing-function: ease-out;
+		animation-duration: 30s;
+
+		-moz-transform-origin: 50% 60%;
+		-webkit-transform-origin: 50% 60%;
+		transform-origin: 50% 60%;
+	}
+
+	@-moz-keyframes zoomOut {
+	    0% {
+	        -moz-transform: scale(5);
+	    }
+	    100% {
+	        -moz-transform: scale(1);
+	    }
+	}
+	@-webkit-keyframes zoomOut {
+	    0% {
+	        -webkit-transform: scale(5);
+	    }
+	    100% {
+	        -webkit-transform: scale(1);
+	    }
+	}
+	@keyframes zoomOut {
+	    0% {
+	        transform: scale(5);
+	    }
+	    100% {
+	        transform: scale(1);
+	    }
+	}
+
+	@-moz-keyframes fadeIn {
+	    from {
+	        opacity: 0;
+	    }
+	    to {
+	        opacity: 1;
+	    }
+	}
+	@-webkit-keyframes fadeIn {
+	    from {
+	        opacity: 0;
+	    }
+	    to {
+	        opacity: 1;
+	    }
+	}
+	@keyframes fadeIn {
+	    from {
+	        opacity: 0;
+	    }
+	    to {
+	        opacity: 1;
+	    }
+	}
+
+	@media
+	(min-resolution: 192dpi),
+	(-webkit-min-device-pixel-ratio: 2),
+	(min--moz-device-pixel-ratio: 2),
+	(-o-min-device-pixel-ratio: 2/1),
+	(min-device-pixel-ratio: 2),
+	(min-resolution: 2dppx) {
+		body {
+			background-image: url('blackorchid_@2X.jpg');
+		}
+	}
+
+	@media only screen and (max-width : 767px) {
+		body {
+			font-size: 14px;
+			font-style: normal;
+		}
+
+		.container {
+			width: 282px;
+			margin: 10px auto;
+		}
+
+		.zoom {
+			width: 280px;
+			height: 280px;
+		}
+
+		.zoom img {
+			width: 280px;
+			height: 280px;
+		}
+	}
+	</style>
+	
+</head>
+
+<body>
+	<div class="container">
+		<audio id="audioplayer" preload="auto" autoplay>
+			<source src="Pachabelly.mp3" type="audio/mp3" />
+		</audio>
+		<p class="fadetext">Tijdens de Nationale Herdenking herdenken wij allen - burgers en militairen - die in het Koninkrijk der Nederlanden of waar ook ter wereld zijn omgekomen of vermoord sinds het uitbreken van de Tweede Wereldoorlog, in oorlogssituaties en bij vredesoperaties.</p>
+		<div class="zoom">
+			<img src="flowers.jpg">
+		</div>
+		<p class="fadetext textsub"><a href="http://hdl.handle.net/10648/a88704b4-d0b4-102d-bcf8-003048976d84">Fotograaf Onbekend / Anefo, 1945</a></p>
+	</div>
+</body>
+</html>
